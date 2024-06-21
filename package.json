@@ -6,17 +6,13 @@
   "scripts": {
     "test": "vitest --watch=false"
   },
+  "types": "./src/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.js"
-    }
+    ".": "./src/index.js"
   },
   "author": "bathan1",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.14.7",
-    "typescript": "^5.5.2",
     "vitest": "^1.6.0"
   },
   "dependencies": {

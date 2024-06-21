@@ -1,11 +1,4 @@
-/**
- * @param {ReturnType<typeof import("redis").createClient>} l2client
- */
 export function make_set_kv(l2client) {
-  /**
-   * @param {string} k
-   * @param {string} v
-  */
   return async (k, v) => {
     try {
       await l2client.set(k, v);
@@ -16,13 +9,7 @@ export function make_set_kv(l2client) {
   }
 }
 
-/**
- * @param {ReturnType<typeof import("redis").createClient>} l2client
- */
 export function make_get_key(l2client) {
-  /**
-  * @param {string} k
-  */
   return async (k) => {
     try {
       const value = await l2client.get(k);
@@ -35,13 +22,7 @@ export function make_get_key(l2client) {
   }
 }
 
-/**
- * @param {ReturnType<typeof import("redis").createClient>} l2client
- */
 export function make_del_key(l2client) {
-  /**
-  * @param {string} k
-  */
   return async (k) => {
     try {
       const rc = await l2client.del(k);
