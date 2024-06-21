@@ -1,6 +1,6 @@
 {
   "name": "@bathan1/adapter-redis",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "type": "module",
   "description": "decache",
   "scripts": {
