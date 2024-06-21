@@ -4,9 +4,7 @@
   "type": "module",
   "description": "decache",
   "scripts": {
-    "test": "vitest --watch=false",
-    "clean": "rm -rf ./src/*.d.ts",
-    "gentype": "tsc"
+    "test": "vitest --watch=false"
   },
   "exports": {
     ".": {
