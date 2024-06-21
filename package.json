@@ -11,7 +11,7 @@
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
-      "default": "./src/index.js"
+      "import": "./src/index.js"
     }
   },
   "author": "bathan1",
