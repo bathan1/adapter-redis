@@ -1,0 +1,19 @@
+{
+  "name": "@bathan1/adapter-redis",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "decache",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --watch=false"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "author": "bathan1",
+  "license": "ISC",
+  "devDependencies": {
+    "redis": "^4.6.14",
+    "vitest": "^1.6.0"
+  }
+}
