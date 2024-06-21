@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "type": "module",
   "description": "decache",
-  "main": "index.js",
   "scripts": {
     "test": "vitest --watch=false"
   },
   "exports": {
-    ".": "./src/index.js"
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
   },
   "author": "bathan1",
   "license": "ISC",
