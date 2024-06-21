@@ -1,4 +1,4 @@
-import { createClient } from "redis";
+import type { RedisClient } from "./fn.js";
 
 type DecacheAdapter = {
   set_kv: (k: string, v: string) => Promise<number>;
@@ -6,5 +6,4 @@ type DecacheAdapter = {
   del_key: (k: string) => Promise<number>;
 }
 
-type RedisClient = ReturnType<typeof createClient>;
 export default function redisAdapter(l2Client: RedisClient): DecacheAdapter;
